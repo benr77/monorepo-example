@@ -1,0 +1,19 @@
+
+parameters:
+
+    package_directories:
+        - 'apps'
+        - 'packages'
+
+    data_to_append:
+        require-dev:
+            phpstan/phpstan: "^0.12.10"
+            rector/rector: "^0.6.13"
+            symplify/easy-coding-standard: "^7.2"
+            symplify/monorepo-builder: "^7.2"
+
+    directories_to_repositories:
+        apps/app1: 'git@github.com:benr77/monorepo-app1.git'
+        apps/app2: 'git@github.com:benr77/monorepo-app2.git'
+
+
